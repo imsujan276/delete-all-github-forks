@@ -16,8 +16,8 @@ function deleteRepos(repos) {
       .then(() => {
         console.log(`${repo} deleted!`);
       })
-      .catch(() => {
-        console.error(`Error deleting ${repo}...`);
+      .catch((e) => {
+        console.error(`Error deleting ${repo}... ${e}`);
       });
   });
 }
